@@ -15,9 +15,11 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="./images/logo.png" alt=""
+        /></a>
+        <!-- <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -27,9 +29,13 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex" role="search">
+        </button> -->
+
+        <div
+          class="collapse navbar-collapse nav__container"
+          id="navbarSupportedContent"
+        >
+          <form class="d-flex mx-auto" role="search">
             <input
               class="form-control me-2"
               type="search"
@@ -40,7 +46,8 @@
               Search
             </button>
           </form>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav d-flex justify-content-between mb-2 mb-lg-0">
+            <li class="nav__form"></li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -57,7 +64,129 @@
         </div>
       </div>
     </nav>
+    <!-- Carousel Start -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide container bg-opacity-25 rounded-4 bg-info"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-5 p-0">
+              <img
+                src="./images/banner-images/xbox.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="col-7 d-flex justify-content-center flex-column">
+              <h1>Mi LED TV 4A PRO 32</h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <h2>$1289</h2>
+              <button class="btn btn-primary width-max-content">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel End -->
+    <!-- Cards Start -->
+    <div class="container my-5">
+      <div class="row row-cols-4 d-flex justify-content-between gap-5">
+        <div
+          class="col ps-5 py-3 d-flex align-items-center rounded-3 card-width bg-primary bg-opacity-50 justify-content-between"
+        >
+          <h2>Watch</h2>
+          <img class="img-fluid" src="./images/categories/watch.png" alt="" />
+        </div>
+        <div
+          class="col ps-5 py-3 d-flex align-items-center rounded-3 card-width bg-dark bg-opacity-50 justify-content-between"
+        >
+          <h2>Bags</h2>
+          <img class="img-fluid" src="./images/categories/bag.png" alt="" />
+        </div>
+        <div
+          class="col ps-5 py-3 d-flex align-items-center rounded-3 card-width bg-warning bg-opacity-50 justify-content-between"
+        >
+          <h2>Shoes</h2>
+          <img class="img-fluid" src="./images/categories/shoes.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Cards End -->
+    <!-- shoes cart -->
+    <div class="container d-flex justify-content-between">
+      <h1>Shoes</h1>
+      <a
+        class="text-decoration-none text-warning"
+        style="font-size: 20px; font-weight: 500"
+        href="See All"
+        >See All</a
+      >
+    </div>
+    <div class="container card-group row-cols-3 my-5 gap-5">
+      <div class="card border-0 p-3 shadow-lg" style="width: 18rem">
+        <img src="./images/shoes/shoe-1.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
+          <p class="card-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+          <h2>$1289</h2>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="card border-0 shadow-lg" style="width: 18rem">
+        <img src="./images/shoes/shoe-1.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
+          <p class="card-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+          <h2>$1289</h2>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="card border-0 shadow-lg" style="width: 18rem">
+        <img src="./images/shoes/shoe-1.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
+          <p class="card-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+          <h2>$1289</h2>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
 
+    <!-- shoes cart end -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

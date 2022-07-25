@@ -1,0 +1,17 @@
+.nav__container {
+  justify-content: space-between;
+}
+.nav_form {
+  justify-self: start;
+}
+
+.width-max-content {
+  max-width: max-content;
+}
+.card-width {
+  width: 30%;
+  height: 140px;
+}
+.img-fluid {
+  height: 100% !important;
+}
