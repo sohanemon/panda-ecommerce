@@ -12,14 +12,18 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4a314d7cd5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light mb-5 shadow-sm fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="./images/logo.png" alt=""
         /></a>
-        <!-- <button
+        <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -29,22 +33,26 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button> -->
+        </button>
 
         <div
           class="collapse navbar-collapse nav__container"
           id="navbarSupportedContent"
         >
-          <form class="d-flex mx-auto" role="search">
+          <form
+            class="d-flex mx-auto rounded-pill bg-dark d-flex px-3 align-items-center bg-opacity-10"
+            role="search"
+          >
             <input
-              class="form-control me-2"
+              style="outline: 0"
+              class="form-control me-2 border-0 bg-transparent"
               type="search"
               placeholder="Search"
               aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+            /><i
+              style="color: rgb(155, 155, 155)"
+              class="fa-solid fa-magnifying-glass"
+            ></i>
           </form>
           <ul class="navbar-nav d-flex justify-content-between mb-2 mb-lg-0">
             <li class="nav__form"></li>
@@ -67,6 +75,7 @@
     <!-- Carousel Start -->
     <div
       id="carouselExampleControls"
+      style="margin-top: 100px; padding: 0 !important"
       class="carousel slide container bg-opacity-25 rounded-4 bg-info"
       data-bs-ride="carousel"
     >
@@ -76,6 +85,48 @@
             <div class="col-5 p-0">
               <img
                 src="./images/banner-images/xbox.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="col-7 d-flex justify-content-center flex-column">
+              <h1>Mi LED TV 4A PRO 32</h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <h2>$1289</h2>
+              <button class="btn btn-dark width-max-content">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-5 p-0">
+              <img
+                src="./images/banner-images/headphone.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="col-7 d-flex justify-content-center flex-column">
+              <h1>Mi LED TV 4A PRO 32</h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <h2>$1289</h2>
+              <button class="btn btn-dark width-max-content">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-5 p-0">
+              <img
+                src="./images/banner-images/tv.png"
                 class="d-block w-100 img-fluid"
                 alt="..."
               />
@@ -161,7 +212,7 @@
         </div>
       </div>
       <div class="card border-0 shadow-lg" style="width: 18rem">
-        <img src="./images/shoes/shoe-1.png" class="card-img-top" alt="..." />
+        <img src="./images/shoes/shoe-3.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
           <p class="card-text">
@@ -173,7 +224,7 @@
         </div>
       </div>
       <div class="card border-0 shadow-lg" style="width: 18rem">
-        <img src="./images/shoes/shoe-1.png" class="card-img-top" alt="..." />
+        <img src="./images/shoes/shoe-2.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
           <p class="card-text">
@@ -199,9 +250,21 @@
     </div>
     <div class="container card-group row-cols-3 my-5 gap-5">
       <div class="card border-0 p-3 shadow-lg" style="width: 18rem">
-        <img src="./images/bags/bag-1.png" class="card-img-top" alt="..." />
+        <img src="./images/bags/bag-3.png" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
+          <h5 class="card-title">Kalu</h5>
+          <p class="card-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+          <h2>$1289</h2>
+          <a href="#" class="btn btn-dark">Buy Now</a>
+        </div>
+      </div>
+      <div class="card border-0 shadow-lg" style="width: 18rem">
+        <img src="./images/bags/bag-2.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Nilu</h5>
           <p class="card-text">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint.
@@ -213,19 +276,7 @@
       <div class="card border-0 shadow-lg" style="width: 18rem">
         <img src="./images/bags/bag-1.png" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
-          <p class="card-text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint.
-          </p>
-          <h2>$1289</h2>
-          <a href="#" class="btn btn-dark">Buy Now</a>
-        </div>
-      </div>
-      <div class="card border-0 shadow-lg" style="width: 18rem">
-        <img src="./images/bags/bag-1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
+          <h5 class="card-title">Lalu</h5>
           <p class="card-text">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint.

@@ -15,3 +15,6 @@
 .img-fluid {
   height: 100% !important;
 }
+nav ul > li > a {
+  font-weight: 500 !important;
+}
